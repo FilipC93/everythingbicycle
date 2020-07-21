@@ -2,100 +2,298 @@
 <html lang="en">
 
 <head>
-    <title>Le Chocolat</title>
+    <title>Everything Bicycle</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
-
-    <header>
-        <div>
-            <div>
-                <div>
-                    <h1>Le Chocolat</h1>
-                    <p>We combine experience with creativity to create innovative tastes based on classic chocolate recipes. Our creations will travel you in the chocolate world!</p>
-                </div>
-                <div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" id="logo" href="./index.html"><img src="images/EverythingBLogo.png" height="40"
+                width="46"></a>
+        <button class="navbar-toggler" data-target="#navigation" data-control="navigation" data-toggle="collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav">
+                <li class="nav-item active">
+                    <a href="./index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./gear.html" class="nav-link">Gear</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact.html" class="nav-link">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/history.html" class="nav-link">History</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/jobs.html" class="nav-link">Jobs</a>
+                </li>
+            </ul>
+        </div>
+        <div class="text-right">
+            <button type="button" class="btn">Clear</button>
+            <button type="button" class="btn btn-info"><i class="fa fa-sign-in" aria-hidden="true"></i> Login to
+                Shop</button>
+        </div>
+    </nav>
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col -12 col -sm-8">
+                    <img src="images/EverythingBLogo.png">
+                    <h2>everythingbicycle.com</h2>
+                    <p class=".d-none .d-sm-block">Check out some of our top of the line bicycles!</p>
                 </div>
             </div>
         </div>
     </header>
-
-    <div>
-        <div>
-            <div>
-                <h3>Our famous chocolates</h3>
-            </div>
-            <div>
-                <h2>85% DARK CHOCOLATE</h2>
-                <p>Dark chocolate with no added sugar. Here you can taste the flavor of cocoa beans.</p>
-            </div>
-        </div>
-
-
-        <div>
-            <div>
-                <h3>WEEK’S OFFER</h3>
-            </div>
-            <div>
-                <h2>Our basket</h2>
-                <p>This week we offer a basket with 10 delicious chocolates! </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 my-3">
+                <div class="pull-right">
+                    <div class="btn-group">
+                        <button class="btn btn-info" id="list">
+                            List View
+                        </button>
+                        <button class="btn btn-danger" id="grid">
+                            Grid View
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div>
-            <div>
-                <h3>Meet our  Specialists</h3>
+        <div id="products" class="row view-group">
+            <div class="item col-xs-4 col-lg-4">
+                <div class="thumbnail card">
+                    <div class="img-event">
+                        <img class="group list-group-image img-fluid" src="images/Bianchi Oltre XR4.jpg"
+                            alt="bianchi" />
+                    </div>
+                    <div class="caption card-body">
+                        <h4 class="group card-title inner list-group-item-heading">
+                            Bianchi Oltre XR4</h4>
+                        <p class="group inner list-group-item-text" id="box1">
+                            The Bianchi Oltre XR4 is the brand’s premier full-carbon road racing bike, built with
+                            Bianchi’s ‘countervail’ (CV) viscoelastic fiber architecture to absorb 80% of road
+                            vibration. All Oltre XR4 bikes feature a Bianchi full carbon aero fork with internal cable
+                            routing.</p>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <p class="lead">
+                                    €4.990</p>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h2>Vasilis Wilson </h2>
-                <h4>Sous-chef</h4>
-                <p>Vasilis is well informed of all the current trends in pastry and contributes his innovative ideas in our products.</p>
+            <div class="item col-xs-4 col-lg-4">
+                <div class="thumbnail card">
+                    <div class="img-event">
+                        <img class="group list-group-image img-fluid" src="images/Specialized Turbo Levo.jpg"
+                            alt="specialized" />
+                    </div>
+                    <div class="caption card-body">
+                        <h4 class="group card-title inner list-group-item-heading">
+                            Specialized Turbo Levo</h4>
+                        <p class="group inner list-group-item-text" id="box2">
+                            The Turbo Levo is the most celebrated electric mountain bike in existence. Inspired by the
+                            Stumpjumper, we’ve given it a light, stiff, and capable chassis, while equipping it with the
+                            smoothest and most powerful motor we’ve ever designed.</p>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <p class="lead">
+                                    €4.299</p>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item col-xs-4 col-lg-4">
+                <div class="thumbnail card">
+                    <div class="img-event">
+                        <img class="group list-group-image img-fluid" src="images/Cannondale Jekyll 29 1.png"
+                            alt="Cannondale" />
+                    </div>
+                    <div class="caption card-body">
+                        <h4 class="group card-title inner list-group-item-heading">
+                            Cannondale Jekyll 29 1</h4>
+                        <p class="group inner list-group-item-text" id="box3">
+                            The Cannondale Jekyll was the first bike to take the overall win in the Enduro World Series
+                            in 2013. Since then, the bike has changed a lot. Cannondale ditched their polarizing
+                            pull-shock system and replaced it with another proprietary shock-system.</p>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <p class="lead">
+                                    €6.850</p>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item col-xs-4 col-lg-4">
+                <div class="thumbnail card">
+                    <div class="img-event">
+                        <img class="group list-group-image img-fluid" src="images/Arktos 29ST.jpg" alt="alchemy" />
+                    </div>
+                    <div class="caption card-body">
+                        <h4 class="group card-title inner list-group-item-heading">
+                            Alchemy Arktos 29ST</h4>
+                        <p class="group inner list-group-item-text" id="box4">
+                            The Arktos 29ST bike is another full-carbon full-suspension bike by Alchemy. The ‘ST’ in its
+                            name stands for ‘Short Travel’ since this enduro bike has 140 mm of travel in front and 120
+                            mm in the back. Therefore, it adds more fun to the mix while not sacrificing almost any of
+                            the capabilities on the trails. </p>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <p class="lead">
+                                    €4.899</p>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item col-xs-4 col-lg-4">
+                <div class="thumbnail card">
+                    <div class="img-event">
+                        <img class="group list-group-image img-fluid" src="images/Tommaso Forcella.png" alt="tommaso" />
+                    </div>
+                    <div class="caption card-body">
+                        <h4 class="group card-title inner list-group-item-heading">
+                            Tommaso Forcella(White)</h4>
+                        <p class="group inner list-group-item-text" id="box5">
+                            Tommaso Forcella is one of those bikes that offer a lot but asks for little. This
+                            Italian-designed road bike has a fantastic ratio between value and money. It combines some
+                            great materials and components, ideal for different riding purposes and different types of
+                            riders. </p>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <p class="lead">
+                                    €1.050</p>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item col-xs-4 col-lg-4">
+                <div class="thumbnail card">
+                    <div class="img-event">
+                        <img class="group list-group-image img-fluid" src="images/Trek Powerfly 9 LT Plus.jpg"
+                            alt="trek" />
+                    </div>
+                    <div class="caption card-body">
+                        <h4 class="group card-title inner list-group-item-heading">
+                            Trek Powerfly 9 LT Plus</h4>
+                        <p class="group inner list-group-item-text" id="box6">
+                            Powerfly LT 9.7 is a carbon electric mountain bike with long-travel suspension and a
+                            high-end parts spec. This high-performance e-MTB is built to take you into the wild unknown
+                            to rip up and down whatever mountains you can find. The Carbon frame fully hides the
+                            battery for clean looks and protection on rugged trails.</p>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <p class="lead">
+                                    €6.850</p>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-    <footer>
-        <div>
-            <div>             
-                <div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 offset-1 col-sm-2">
                     <h5>Links</h5>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
+                    <ul class="list-unstyled">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="gear.html">Gear</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="jobs.html">Jobs</a></li>
+                        </ul>
                     </ul>
                 </div>
-                <div>
-                    <h5>Our Address</h5>
+                <div class="col-6 col-sm-5">
+                    <h5>Come Visit Us</h5>
                     <address>
-                        121, Clear Wave Road<br>
-                        Clear Wave Road, Aloha<br>
-                        HAWAII<br>
-                        Tel.: +987 6543 2100<br>
-                        Fax: +987 6543 2101<br>
-                        Email: <a href="mailto:chocolat@nomail.net">chocolat@nomail.net</a>
-		           </address>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.1555997069554!2d22.946237015710594!3d40.62645035078121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a839af2548cc69%3A0xef18309d80742d16!2zzpvOtc-FzrrPjM-CIM6gz43Pgc6zzr_PgiDPhM63z4IgzpjOtc-Dz4POsc67zr_Ovc6vzrrOt8-C!5e0!3m2!1sel!2sgr!4v1595295367526!5m2!1sel!2sgr"
+                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                        <i class="fa fa-phone" aria-hidden="true"></i>(+30)1234567890<br>
+                        <i class="fa fa-envelope fa-lg"></i> <a
+                            href="everythingbicycle@nomail.com">everythingbicycle@nomail.com</a>
+                    </address>
                 </div>
-                <div>
-                    <div>
-                        <a href="http://google.com/+">Google+</a>
-                        <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
-                        <a href="http://www.linkedin.com/in/">LinkedIn</a>
-                        <a href="http://twitter.com/">Twitter</a>
-                        <a href="http://youtube.com/">YouTube</a>
-                        <a href="mailto:">Mail</a>
+                <div class="col col-sm-4 align-self center">
+                    <div style="text-align:center">
+                        <p>Follow Us</p>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id=">
+                            <i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-instagram" href="https://www.instagram.com/">
+                            <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/">
+                            <i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/">
+                            <i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/">
+                            <i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon btn-spotify" href="https://www.spotify.com/">
+                            <i class="fa fa-spotify" aria-hidden="true"></i></a>
                     </div>
                 </div>
-           </div>
-           <div>             
-                <div>
-                    <p> &copy; Copyright 2018 Le Chocolat</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p> &copy; Copyright 2020 Everything Bicycle S.A.
+                    </p>
                 </div>
-           </div>
+            </div>
         </div>
     </footer>
-
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/tether/dist/js/tether.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
