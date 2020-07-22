@@ -9,8 +9,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -25,8 +30,14 @@
                 <li class="nav-item">
                     <a href="./index.html" class="nav-link">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a href="./gear.html" class="nav-link">Gear</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/gear.html" id="navdrop" role="button"
+                        data-toggle="dropdown" data-hover="dropdown">Gear</a>
+                    <div class="dropdown-menu" aria-labelledby="navdrop">
+                        <a href="#" class="dropdown-item">Service1</a>
+                        <a href="#" class="dropdown-item">Service2</a>
+                        <a href="#" class="dropdown-item">Service3</a>
+                    </div>
                 </li>
                 <li class="nav-item active">
                     <a href="/about.html" class="nav-link">About Us</a>
@@ -43,10 +54,80 @@
             </ul>
         </div>
         <div class="text-right">
-            <button type="button" class="btn">Clear</button>
-            <button type="button" class="btn btn-info">Login to Shop</button>
+            <button type="button" class="btn btn-info"><i class="fa fa-sign-in" aria-hidden="true"></i> Login to
+                Shop</button>
         </div>
     </nav>
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col -12 col -sm-8">
+                    <img src="images/EverythingBLogo.png">
+                    <h2>everythingbicycle.com</h2>
+                    <p class=".d-none .d-sm-block">Everything about 2 wheels & more!</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 offset-1 col-sm-2">
+
+                    <ul class="list-unstyled">
+                        <ul>
+                            <h5>Links</h5>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="tshirts.html">T-Shirts&Jackets</a></li>
+                            <li><a href="helmets.html">Helmets</a></li>
+                            <li><a href="gloves.html">Gloves</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="jobs.html">Jobs</a></li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5" id="location">
+                    <h5>Come Visit Us</h5>
+                    <address>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.1555997069554!2d22.946237015710594!3d40.62645035078121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a839af2548cc69%3A0xef18309d80742d16!2zzpvOtc-FzrrPjM-CIM6gz43Pgc6zzr_PgiDPhM63z4IgzpjOtc-Dz4POsc67zr_Ovc6vzrrOt8-C!5e0!3m2!1sel!2sgr!4v1595295367526!5m2!1sel!2sgr"
+                            width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe><br>
+                        <i class="fa fa-phone" aria-hidden="true"></i>(+30)1234567890<br>
+                        <i class="fa fa-envelope fa-lg"></i> <a
+                            href="everythingbicycle@nomail.com">everythingbicycle@nomail.com</a>
+                    </address>
+                </div>
+                <div class="col col-sm-4 align-self center" id="social">
+                    <div style="text-align:center">
+                        <p>
+                        <h4>Follow Us</h4>
+                        </p>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id=">
+                            <i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-instagram" href="https://www.instagram.com/">
+                            <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/">
+                            <i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/">
+                            <i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/">
+                            <i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon btn-spotify" href="https://www.spotify.com/">
+                            <i class="fa fa-spotify" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p> &copy; Copyright 2020 Everything Bicycle S.A.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>

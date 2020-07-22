@@ -3,10 +3,12 @@
 }
 .navbar-light .navbar-nav .nav-link {
     color: white;
+    font-size: 18px;
 }
 /* body { 
     padding-top: 65px;
 }  */
+
 .view-group {
     display: -ms-flexbox;
     display: flex;
@@ -99,4 +101,69 @@ a {
 .btn:not(:disabled):not(.disabled) {
     cursor: pointer;
     color: white;
+}
+#location{
+    text-align: center;
+}
+@media only screen and (max-width: 1026px) {
+    #location {
+        display: none;
+    }
+}
+.dropdown-item.active,
+ .dropdown-item:active{
+     color:white;
+    }
+.dropdown-item:focus,
+ .dropdown-item:hover{
+     background:#64b666;
+    }
+    .dropdown-menu{
+        background-color: #64b666;
+        color: white !important;
+    }
+    .nav-link{
+        padding:15px 5px;transition:0.2s;
+    }
+    .nav-item:hover::after{width:100%;}
+    .dropdown-item.active, .dropdown-item:active{color:white;}
+.dropdown-item{
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    font-size: 18px;
+}
+#tbox2{
+    padding-top: 23px;
+}
+#tbox3{
+    padding-top: 23px;
+}
+#tbox4{
+    padding-top: 23px;
+}
+#tbox6{
+    padding-top: 23px;
+}
+.old-price {
+    color: red;
+    text-decoration: line-through;
+}
+#hbox1{
+    padding-top: 23px;
+}
+#hbox3{
+    padding-top: 23px;
+}
+#hbox5{
+    padding-top: 23px;
+}
+#gbox2{
+    padding-top: 23px;
+}
+#gbox4{
+    padding-top: 3px;
+}
+#gbox5{
+    padding-top: 3px;
 }
