@@ -167,3 +167,66 @@ a {
 #gbox5{
     padding-top: 3px;
 }
+#checkout{
+    background-color: #64b666;
+    border-color: #64b666;
+}
+.gradient-shadow {
+    background: rgba(0, 0, 0, 0.2);
+    background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.2) 0%, #fff 100%);
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.2) 0%,#fff 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%,#fff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(0, 0, 0, 0.2)', endColorstr='#fff',GradientType=1 );
+    filter: blur(2px);
+    width: 755px;
+    height: 500px;
+    position: relative;
+    left: 0px;
+    top: 10px;
+    margin: 0 auto;
+  }
+  .shadow-box {
+    width: 750px;
+    background: #fff;
+    padding: 20px;
+    position: relative;
+    margin-top: -485px;
+    height: 500px;
+  }
+  .col-md-4{
+    display: inline-block;
+    margin-left:-10px;
+  }
+  .col-md-4 img{
+    width:100%;
+    height:auto;
+  }
+    
+  body .carousel-control-prev-icon,
+  body .carousel-indicators li,
+  body .carousel-control-next-icon{
+    background-color:#000;
+  }
+  
+  span.carousel-control-prev-icon {
+   position: relative;
+   bottom: 40px;
+   right: 40px;
+  }
+  
+  span.carousel-control-next-icon {
+   position: relative;
+   bottom: 40px;
+  }
+  #leadership{
+      text-align: center;
+  }
+  #started{
+      text-align: center;
+  }
+  #vision{
+      text-align: center;
+  }
+  #why{
+      text-align: center;
+  }
