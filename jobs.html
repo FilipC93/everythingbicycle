@@ -28,36 +28,84 @@
         <div class="collapse navbar-collapse" id="navigation">
             <ul class="nav navbar-nav">
                 <li class="nav-item">
-                    <a href="./index.html" class="nav-link">Home</a>
+                    <a href="./index.html" class="nav-link"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="/gear.html" id="navdrop" role="button"
-                        data-toggle="dropdown" data-hover="dropdown">Gear</a>
+                    <a class="nav-link dropdown-toggle" href="./tshirts.html" id="navdrop" role="button"
+                        data-toggle="dropdown" data-hover="dropdown"><i class="fa fa-cogs" aria-hidden="true"></i>
+                        Gear</a>
                     <div class="dropdown-menu" aria-labelledby="navdrop">
-                        <a href="#" class="dropdown-item">Service1</a>
-                        <a href="#" class="dropdown-item">Service2</a>
-                        <a href="#" class="dropdown-item">Service3</a>
+                        <a href="./tshirts.html" class="dropdown-item">T-Shirts&Jackets</a>
+                        <a href="./helmets.html" class="dropdown-item">Helmets</a>
+                        <a href="./gloves.html" class="dropdown-item">Gloves</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="/about.html" class="nav-link">About Us</a>
+                    <a href="./about.html" class="nav-link"><i class="fa fa-info-circle" aria-hidden="true"></i> About
+                        Us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/contact.html" class="nav-link">Contact Us</a>
+                    <a href="./contact.html" class="nav-link"><i class="fa fa-address-card-o" aria-hidden="true"></i>
+                        Contact Us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/history.html" class="nav-link">History</a>
+                    <a href="./history.html" class="nav-link"><i class="fa fa-history" aria-hidden="true"></i>
+                        History</a>
                 </li>
                 <li class="nav-item active">
-                    <a href="/jobs.html" class="nav-link">Jobs</a>
+                    <a href="./jobs.html" class="nav-link"><i class="fa fa-suitcase" aria-hidden="true"></i> Jobs</a>
                 </li>
             </ul>
         </div>
-        <div class="text-right">
-            <button type="button" class="btn btn-info"><i class="fa fa-sign-in" aria-hidden="true"></i> Login to
-                Shop</button>
-        </div>
+        <span class="navbar-text ml-auto">
+            <a data-toggle="modal" data-target="#loginModal">
+                <button type="button" class="btn btn-info"><i class="fa fa-sign-in" aria-hidden="true"></i> Login to
+                    Shop
+                </button>
+            </a>
+        </span>
     </nav>
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times</button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleInputEmail3">Email
+                                address
+                            </label>
+                            <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleInputPassword3">
+                                Password
+                            </label>
+                            <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox">
+                                Remember me
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel
+                    </button>
+                    <button type="submit" class="btn btn-primary btn-sm">
+                        Sign in
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -69,6 +117,153 @@
             </div>
         </div>
     </header>
+    <div class="container row-content">
+        <div class="col-12">
+            <h2>Jobs Available at the moment :</h2>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="jobOne">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            <h4>Social Media Specialist <small>(Thessaloniki Region) </small></h4>
+                        </button>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <p class="col d-none d-sm-block">A Social Media Specialist job is now available in our
+                                Thessaloniki branch!<br>We are looking for a driven Social Media Specialist to attract
+                                and interact with targeted virtual communities and networks users.
+                            <ul>
+                                <h5>Your responsibilities will consist of :</h5>
+                                <li>Collaborate with other departments (customer relations, sales etc) to manage
+                                    reputation, identify key players and coordinate actions.</li>
+                                <li>Moderate all user-generated content in line with the moderation policy for each
+                                    community.</li>
+                                <li>Create editorial calendars and syndication schedules.</li>
+                                <li>Set up and optimize our company pages within each platform to increase the
+                                    visibility of everythingbicycle.com social content.</li>
+                                <li>Build and execute social media strategy through competitive research, platform
+                                    determination, benchmarking, messaging and audience identification.</li>
+                                <li>Generate, edit, publish and share daily content (original text, images, video or
+                                    HTML) that builds meaningful connections and encourages community members to take
+                                    action.</li>
+                            </ul>
+                            <a data-toggle="modal" data-target="#loginModal">
+                                <button type="button" id="cvButton1" class="btn btn-info"><i class="fa fa-sign-in"
+                                        aria-hidden="true"></i> Login to
+                                    Submit your CV
+                                </button>
+                            </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="jobTwo">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            <h4>Marketing Specialist <small>(Thessaloniki Region)</small></h4>
+                        </button>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <p class="col d-none d-sm-block">A Marketing Specialist job is now available in our
+                                Thessaloniki branch!<br>We are looking for an enthusiastic Marketing Specialist to help
+                                us in our overall marketing efforts.<br> You will be an integral part of the development
+                                and
+                                execution of marketing plans to reach targets<br> from brand awareness to product
+                                promotion.
+                            <ul>
+                                <h5>Your responsibilities will consist of :</h5>
+                                <li>Conduct market research to find answers about consumer requirements, habits and
+                                    trends.</li>
+                                <li>Brainstorm and develop ideas for creative marketing campaigns.</li>
+                                <li>Plan and execute initiatives to reach the target audience through appropriate
+                                    channels (social media, e-mail, TV etc.)</li>
+                                <li>Undertake individual tasks of a marketing plan as assigned.</li>
+                            </ul>
+                            <a data-toggle="modal" data-target="#loginModal">
+                                <button type="button" id="cvButton2" class="btn btn-info"><i class="fa fa-sign-in"
+                                        aria-hidden="true"></i> Login to
+                                    Submit your CV
+                                </button>
+                            </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="jobThree">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            <h4>Accountant <small>(Thessaloniki Region)</small></h4>
+                        </button>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <p class="col d-none d-sm-block">An accounting position is open in our Thessaloniki
+                                branch!<br>We are looking for an Accountant to manage all financial transactions, from
+                                fixed
+                                payments and variable expenses to bank deposits and budgets.Accountant responsibilities
+                                include auditing financial documents and procedures, reconciling bank statements and
+                                calculating tax payments and returns. To be successful in this role, you should have
+                                previous experience with bookkeeping and a flair for spotting numerical mistakes.<br>
+                            <ul>
+                                <h5>Your responsibilities will consist of :</h5>
+                                <li>Manage accounting transactions.</li>
+                                <li>Prepare budget forecasts.</li>
+                                <li>Handle monthly, quarterly and annual closings.</li>
+                                <li>Ensure timely bank payments.</li>
+                                <li>Reinforce financial data confidentiality and conduct database backups when
+                                    necessary.</li>
+                            </ul>
+                            <a data-toggle="modal" data-target="#loginModal">
+                                <button type="button" id="cvButton3" class="btn btn-info"><i class="fa fa-sign-in"
+                                        aria-hidden="true"></i> Login to
+                                    Submit your CV
+                                </button>
+                            </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="jobFour">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                            aria-expanded="false" aria-controls="collapseFour">
+                            <h4>Sales position<small> (Thessaloniki Region)</small></h4>
+                        </button>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                            <p class="col d-none d-sm-block">A salesperson position is open in our Thessaloniki
+                                Branch!<br>Seeking an experienced(min 2 years of similar position) and results-driven
+                                salesperson to join our energetic team.<br> The individual in this role would provide
+                                appropriate product solutions for our
+                                customers and nurture them through our purchase flow from start to finish.Candidates
+                                for this position should prioritize customer care, acquisition, and company
+                                profitability.<br>
+                            <ul>
+                                <h5>Skills the position requires :</h5>
+                                <li>Highly Motivated and Driven</li>
+                                <li>Social skills</li>
+                                <li>Bachelor’s degree preferred but may accept relevant experience.</li>
+                                <li>Familiarity with BRM and CRM best practices.(Not necessary but we will appreciate
+                                    highly).</li>
+                            </ul>
+                            <a data-toggle="modal" data-target="#loginModal">
+                                <button type="button" id="cvButton4" class="btn btn-info"><i class="fa fa-sign-in"
+                                        aria-hidden="true"></i> Login to
+                                    Submit your CV
+                                </button>
+                            </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -76,14 +271,14 @@
 
                     <ul class="list-unstyled">
                         <h5>Links</h5>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="tshirts.html">T-Shirts&Jackets</a></li>
-                        <li><a href="helmets.html">Helmets</a></li>
-                        <li><a href="gloves.html">Gloves</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="history.html">History</a></li>
-                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./tshirts.html">T-Shirts&Jackets</a></li>
+                        <li><a href="./helmets.html">Helmets</a></li>
+                        <li><a href="./gloves.html">Gloves</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./history.html">History</a></li>
+                        <li><a href="./jobs.html">Jobs</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-sm-5" id="location">

@@ -230,3 +230,109 @@ a {
   #why{
       text-align: center;
   }
+  body {
+    background-color: whitesmoke;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 34, 51, 0.1);
+    box-shadow: 2px 4px 10px 0 rgba(0, 34, 51, 0.05), 2px 4px 10px 0 rgba(0, 34, 51, 0.05);
+    border-radius: 0.15rem;
+}
+
+/* Tabs Card */
+
+.tab-card {
+  border:1px solid #eee;
+  align-content: left;
+}
+
+.tab-card-header {
+  background:none;
+  background-color: teal;
+}
+/* Default mode */
+.tab-card-header > .nav-tabs {
+  border: none;
+  margin: 0px;
+}
+.tab-card-header > .nav-tabs > li {
+  margin-right: 2px;
+}
+.tab-card-header > .nav-tabs > li > a {
+  border: 0;
+  border-bottom:2px solid transparent;
+  margin-right: 0;
+  color: white;
+  padding: 2px 15px;
+}
+
+.tab-card-header > .nav-tabs > li > a.show {
+    border-bottom:2px solid teal;
+    color: teal;
+}
+.tab-card-header > .nav-tabs > li > a:hover {
+    color: white;
+}
+
+.tab-card-header > .tab-content {
+  padding-bottom: 0;
+}
+#click1{
+    color: black;
+}
+#click2{
+    color: black;
+}
+#click3{
+    color: black;
+}
+#cards{
+    text-align: center;
+}
+#wikiButton{
+    background-color: teal;
+    border-color: teal;
+}
+#newsButton{
+    background-color: teal;
+    border-color: teal;
+}
+#emailButton1{
+    background-color: teal;
+    border-color: teal;
+}
+#emailButton2{
+    background-color: teal;
+    border-color: teal;
+}
+#emailButton3{
+    background-color: teal;
+    border-color: teal;
+}
+#mapsButton{
+    background-color: teal;
+    border-color: teal;
+}
+#facebookButton{
+    background-color: teal;
+    border-color: teal;
+}
+#youtubeCard{
+    align-content: center;
+    text-align: center;
+    color: white;
+}
+#youtubeCard1{
+    background-color: teal;
+}
+#jobOne,#jobTwo,#jobThree,#jobFour,#cvButton4,#cvButton3,#cvButton2,#cvButton1{
+    background-color: teal;
+}
+#mainHistoryTag{
+    text-align: center;
+}
+#wikiLink1{
+    text-align: center;
+}
